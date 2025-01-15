@@ -5,12 +5,12 @@ import argparse
 import numpy as np
 from thop import profile, clever_format
 from torch.utils.data import DataLoader
-from src.model.sparsemax_verticalMoe import SliceModel, SparseMax_VerticalSAMS
+from algorithm.src.model.sparsemax_verticalMoe import SliceModel, SparseMax_VerticalSAMS
 
 import third_party.utils.func_utils as utils
-from src.data_loader import sql_attached_dataloader
+from algorithm.src.data_loader import sql_attached_dataloader
 
-from src.model.factory import initialize_model
+from algorithm.src.model.factory import initialize_model
 
 from fvcore.nn import FlopCountAnalysis
 from fvcore.nn import parameter_count_table

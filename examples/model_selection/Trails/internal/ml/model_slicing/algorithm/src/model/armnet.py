@@ -1,9 +1,9 @@
 from typing import Tuple
 import torch
 import torch.nn as nn
-from src.model.expert import ARMExpert
+from algorithm.src.model.expert import ARMExpert
 
-from src.model.layer import Embedding
+from algorithm.src.model.layer import Embedding
 
 class ARMNet(nn.Module):
     """

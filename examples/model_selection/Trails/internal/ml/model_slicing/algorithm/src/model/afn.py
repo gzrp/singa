@@ -1,9 +1,9 @@
 from typing import Tuple
 import torch
 import torch.nn as nn
-from src.model.expert import AFNExpert
+from algorithm.src.model.expert import AFNExpert
 
-from src.model.layer import Embedding
+from algorithm.src.model.layer import Embedding
 
 class AFN(nn.Module):
     """

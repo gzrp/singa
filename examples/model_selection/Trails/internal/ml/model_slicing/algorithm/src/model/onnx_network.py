@@ -4,8 +4,8 @@ import torch
 import torch.nn as nn
 
 from copy import deepcopy
-from src.model.expert import initialize_expert
-from src.model.gate_network import SparseVerticalGate
+from algorithm.src.model.expert import initialize_expert
+from algorithm.src.model.gate_network import SparseVerticalGate
 
 class EntmaxBisect_function(nn.Module):
     def __init__(self, alpha=1.5, dim=-1, n_iter=10, requires_grad = True):

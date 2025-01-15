@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch
 import numpy as np
 from einops import rearrange
-from third_party.utils.model_utils import EntmaxBisect
+from algorithm.third_party.utils.model_utils import EntmaxBisect
 
 class Expert(nn.Module):
     def __init__(self, nfield, nemb , output_size, hidden_size):

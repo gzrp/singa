@@ -1,8 +1,8 @@
 from typing import Tuple
 import torch
 
-from src.model.layer import Embedding, MOEMLP
-from src.model.verticalMoE import VerticalDNN
+from algorithm.src.model.layer import Embedding, MOEMLP
+from algorithm.src.model.verticalMoE import VerticalDNN
 
 class MoEDNN(torch.nn.Module):
     """

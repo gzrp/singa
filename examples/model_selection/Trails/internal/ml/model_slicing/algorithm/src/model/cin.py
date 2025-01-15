@@ -1,8 +1,8 @@
 from typing import Tuple
 import torch
-from src.model.expert import CompressedInteractionExpert
+from algorithm.src.model.expert import CompressedInteractionExpert
 
-from src.model.layer import Embedding
+from algorithm.src.model.layer import Embedding
 
 
 

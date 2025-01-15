@@ -1,7 +1,7 @@
 import torch
-from src.model.expert import NFMExpert
+from algorithm.src.model.expert import NFMExpert
 
-from src.model.layer import Embedding
+from algorithm.src.model.layer import Embedding
 
 
 class NFM(torch.nn.Module):

@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import argparse
 
-from src.model.layer import HyperNet,MOENet
-from third_party.utils.model_utils import EntmaxBisect
+from algorithm.src.model.layer import HyperNet,MOENet
+from algorithm.third_party.utils.model_utils import EntmaxBisect
 
 
 class SAMS(nn.Module):

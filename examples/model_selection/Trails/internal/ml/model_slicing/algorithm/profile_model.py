@@ -6,9 +6,9 @@ import numpy as np
 from torch.utils.data import DataLoader
 
 import third_party.utils.func_utils as utils
-from src.data_loader import sql_attached_dataloader
+from algorithm.src.data_loader import sql_attached_dataloader
 
-from src.model.factory import initialize_model
+from algorithm.src.model.factory import initialize_model
 import matplotlib.pyplot as plt
 
 

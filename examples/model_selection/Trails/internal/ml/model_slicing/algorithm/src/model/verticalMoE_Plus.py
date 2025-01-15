@@ -1,9 +1,9 @@
 import argparse
 import torch
 import torch.nn as nn
-from src.model.gate_network import SparseVerticalGate, VerticalGate
+from algorithm.src.model.gate_network import SparseVerticalGate, VerticalGate
 
-from src.model.sparseMoE import Expert, SparseMoE
+from algorithm.src.model.sparseMoE import Expert, SparseMoE
 
 
 

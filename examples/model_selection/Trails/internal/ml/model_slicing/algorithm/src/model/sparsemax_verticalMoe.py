@@ -5,10 +5,10 @@ import torch.nn as nn
 
 
 import argparse
-from src.model.expert import initialize_expert
-from src.model.gate_network import SparseVerticalGate
+from algorithm.src.model.expert import initialize_expert
+from algorithm.src.model.gate_network import SparseVerticalGate
 
-from third_party.utils.model_utils import EntmaxBisect
+from algorithm.third_party.utils.model_utils import EntmaxBisect
 
 
 

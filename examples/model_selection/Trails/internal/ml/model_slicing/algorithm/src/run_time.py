@@ -10,13 +10,13 @@ import torch.nn as nn
 from torch import optim
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
-from src.data_loader import Workload
+from algorithm.src.data_loader import Workload
 
 
-import third_party.utils.func_utils as utils
-from src.singleton import logger
+import algorithm.third_party.utils.func_utils as utils
+from algorithm.src.singleton import logger
 
-from src.model import initialize_model
+from algorithm.src.model import initialize_model
 
 class Wrapper(object):
 

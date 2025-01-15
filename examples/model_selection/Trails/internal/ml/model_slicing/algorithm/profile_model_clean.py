@@ -2,7 +2,7 @@ import os
 import torch
 import argparse
 
-from src.model.factory import initialize_model
+from algorithm.src.model.factory import initialize_model
 
 
 def load_model(tensorboard_path: str):

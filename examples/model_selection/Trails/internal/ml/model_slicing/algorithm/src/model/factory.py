@@ -1,17 +1,17 @@
 import torch
 import argparse
-from src.model import SAMS
-from src.model import MoEDNN
-from src.model.afn import AFN
-from src.model.armnet import ARMNet
-from src.model.baseline import MeanMoE
-from src.model.cin import CIN
-from src.model.dnn import DNN
-from src.model.nfm import NFM
-from src.model.sparsemax_verticalMoe import SparseMax_VerticalSAMS
+from algorithm.src.model import SAMS
+from algorithm.src.model import MoEDNN
+from algorithm.src.model.afn import AFN
+from algorithm.src.model.armnet import ARMNet
+from algorithm.src.model.baseline import MeanMoE
+from algorithm.src.model.cin import CIN
+from algorithm.src.model.dnn import DNN
+from algorithm.src.model.nfm import NFM
+from algorithm.src.model.sparsemax_verticalMoe import SparseMax_VerticalSAMS
 # from src.model.verticalMoE import VerticalSAMS
 # from src.model.verticalMoE_Plus import VerticalMoE_Predict_Sams
-from src.model.verticalMoE import VerticalSAMS
+from algorithm.src.model.verticalMoE import VerticalSAMS
 
 def initialize_model(args: argparse.Namespace):
 

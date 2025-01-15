@@ -6,7 +6,7 @@ import numpy as np
 import shutil
 
 from typing import Callable, List
-from src.data_loader import SQLAttacedLibsvmDataset
+from algorithm.src.data_loader import SQLAttacedLibsvmDataset
 
 def seed_everything(seed: int):
     import random, os

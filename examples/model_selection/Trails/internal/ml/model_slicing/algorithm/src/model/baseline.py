@@ -3,7 +3,7 @@ from copy import deepcopy
 import torch
 import torch.nn as nn
 
-from src.model.expert import initialize_expert
+from algorithm.src.model.expert import initialize_expert
 
 
 class MeanMoE(nn.Module):
