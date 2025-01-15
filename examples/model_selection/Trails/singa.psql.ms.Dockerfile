@@ -83,10 +83,10 @@ RUN mkdir Trails && \
     git config --global http.proxy http://192.168.56.1:7890 && \
     git config --global https.proxy http://192.168.56.1:7890 && \
     git init && \
-    git remote add origin https://github.com/apache/singa.git && \
+    git remote add origin https://github.com/gzrp/singa.git && \
     git config core.sparseCheckout true && \
     echo "examples/model_selection/Trails/*" > .git/info/sparse-checkout && \
-    git pull --depth=1 origin dev-postgresql && \
+    git pull --depth=1 origin dev-postgresql-ms && \
     mv examples/model_selection/Trails/* . && \
     rm -rf examples && \
     cp ./internal/pg_extension/template/Cargo.pg14.toml ./internal/pg_extension/Cargo.toml && \
