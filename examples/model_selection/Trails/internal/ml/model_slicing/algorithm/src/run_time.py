@@ -16,7 +16,7 @@ from algorithm.src.data_loader import Workload
 import algorithm.third_party.utils.func_utils as utils
 from algorithm.src.singleton import logger
 
-from algorithm.src.model import initialize_model
+from algorithm.src.model.factory import initialize_model
 
 class Wrapper(object):
 
@@ -116,7 +116,8 @@ class Wrapper(object):
                 
                 "train_val_total_time": time.time() - start_time
                 }
-            
+
+
             self.writer.add_scalar('Loss/Training_Epoch_Ave_Loss', train_loss, epoch)
             self.writer.add_scalar('Loss/Valid_Epoch_Ave_Loss', valid_loss, epoch)
             self.writer.add_scalar('Loss/Test_Epoch_Ave_Loss', test_loss, epoch)
