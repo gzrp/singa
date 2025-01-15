@@ -77,6 +77,8 @@ ARG CACHEBUST=1
 WORKDIR /project
 RUN mkdir Trails && \
     cd Trails && \
+    git config --global http.proxy http://192.168.56.1:7890 && \
+    git config --global https.proxy http://192.168.56.1:7890 && \
     git init && \
     git remote add origin https://github.com/apache/singa.git && \
     git config core.sparseCheckout true && \
